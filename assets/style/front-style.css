@@ -142,9 +142,9 @@ button {
 
 :root {
   --Ubuntu-font: "Ubuntu", sans-serif;
-  --light-black: #2e2c2caf;
-  --orange-evo: #ed632f;
-  --light-orange: #ec7c53;
+  --light-black: #404042af;
+  --blue-chroma: #3b9c90;
+  --light-blue: #67a59eaf;
   --bggradient: linear-gradient(to bottom, #010810, #070506);
   --light-gray: rgba(255, 255, 255, 0.877);
 }
@@ -159,8 +159,96 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding-top: 10px;
     text-align: center;
     position: relative;
     height: 100vh;
   }
+
+  .main-header .menu {
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 25px;
+  }
+
+  /* Section-1 inicial */
+
+.inicial {
+  padding-top: 15vmin;
+}
+
+.inicial .row .col-md-6 .cartao-you{
+    background: var(--light-blue);
+    color: #fff;
+    padding: 10vmin 120px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.inicial .row .col-md-6 .cartao-company{
+  background: var(--light-black);
+  color: #fff;
+  padding: 10vmin 120px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+
+ .inicial .row .col-md-6 .cartao-you h2,
+ .inicial .row .col-md-6 .cartao-company h2 {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 3rem;
+  }
+
+  .inicial .row .col-md-6 .cartao-you span,
+ .inicial .row .col-md-6 .cartao-company span {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 3rem;
+  }
+  
+  .inicial .row .col-md-6 .cartao-you p,
+  .inicial .row .col-md-6 .cartao-company p {
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+  }
+
+  .inicial .row .col-md-6 .cartao-you a,
+  .inicial .row .col-md-6 .cartao-company a {
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+  }
+
+  .inicial .row .col-md-6 .cartao-you i,
+  .inicial .row .col-md-6 .cartao-company i {
+    padding-left: 8px;
+  }
+
+  .inicial .row .col-md-6 .cartao-you a:hover,
+  .inicial .row .col-md-6 .cartao-company a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+
+    .inicial .row .col-md-6 {
+      text-align: center!important;
+      margin-bottom: 10px;
+    }
+
+    .inicial .row .col-md-6 .cartao-you{
+      padding: 10vmin;
+  }
+
+  .inicial .row .col-md-6 .cartao-company{
+    padding: 10vmin;
+}
+
+.main-cover{
+  height: 100%;
+}
+
+}
