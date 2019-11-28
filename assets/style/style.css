@@ -227,6 +227,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     width: 40%;
+    margin-top: 1rem;
   }
   
   .main-header .menu ul a {
@@ -530,7 +531,7 @@ body {
   }
   
   .main-header .header-text .color-blue {
-    color: #ed632f;
+    color: #3d9a92;
   }
   
   .main-header .header-text .color-blue-bold {
@@ -572,107 +573,6 @@ body {
     }
   }
 
-  .header-contato {
-    background: transparent;
-    transition: 0.7s;
-  }
-  
-  .header-contato>div {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .header-contato>div {
-      -ms-flex-direction: column;
-      flex-direction: column;
-    }
-  
-    .header-contato>div .item-contato {
-      width: 245px !important;
-      border-right: 1px solid transparent !important;
-      margin-bottom: 20px;
-    }
-  }
-  
-  .header-contato>div .item-contato {
-    width: 35%;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 0px 40px;
-    border-right: 1px solid gray;
-  }
-
-  .header-contato>div .item-contato h4 {
-    font-size: 16px;
-    line-height: 22px;
-    color: #ed632f;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin-top: .5rem;
-  }
-  
-  .header-contato>div .item-contato p {
-    font-size: 16px;
-    line-height: 16px;
-    color: #fff;
-    font-weight: 300;
-  }
-  
-  .header-contato>div .item-contato img {
-    margin-right: 30px;
-  }
-  
-  .header-contato>div .item-contato:last-child {
-    border: none;
-  }
-  
-  @media only screen and (max-width: 768px) {
-    .header-contato>div .item-contato {
-      padding: 0px;
-    }
-  }
-  
-  @media (max-width: 500px) {
-    .header-contato>div .item-contato {
-      margin-bottom: 0px;
-    }
-  }
-  
-  @media (max-width: 500px) {
-    .header-contato>div .hide {
-      display: none;
-    }
-  }
-
-  .float-contact {
-    transition: 0.7s;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    bottom: 0;
-  }
-  
-  @media (max-width: 780px) {
-    .float-contact {
-      position: fixed;
-    }
-  }
-
-  .sticky {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.815);
-    z-index: 100;
-    transition: all 1.5s ease;
-  }
 
   .home-container {
     position: relative;
@@ -890,8 +790,6 @@ line-height: 1.5rem;
   }
 }
 
-
-
 .cover .overlay {
   position: absolute;
   top: 0;
@@ -1091,7 +989,7 @@ line-height: 1.5rem;
 
 .social .row .siga {
   text-align: left;
-  padding-top: 10px;
+  padding-top: 3px;
 }
 
 .botoes {
@@ -1108,8 +1006,6 @@ line-height: 1.5rem;
   background: #2d3134;
   cursor: pointer;
 }
-
-
 
 
 .list-inline-item:not(:last-child) {
