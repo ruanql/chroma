@@ -162,7 +162,7 @@ body {
     background-position: center center;
     text-align: center;
     position: relative;
-    height: 90vh;
+    height: 80vh;
   }
 
   .carousel-indicators .active {
@@ -507,15 +507,21 @@ body {
   .main-header .header-text {
     text-align: center;
     margin-top: 120px;
-    padding: 0px 5%;
+    padding: 0px 15%;
   }
   
   .main-header .header-text h3 {
     color: #fff;
     font-size: 32px;
+    font-weight: 300;
+    line-height: 3rem;
+  }
+
+  .main-header .header-text span {
+    color: #fff;
+    font-size: 32px;
     font-weight: bold;
     line-height: 3rem;
-    text-transform: uppercase;
   }
   
   .main-header .header-text p {
@@ -580,14 +586,14 @@ body {
   
   .home-container .services,
   .home-container .certificada,
-  .home-container .marcas {
+  .home-container .clientes {
     text-align: center;
     padding: 100px 0px;
   }
 
   .home-container .services .home-title,
 .home-container .certificada .home-title,
-.home-container .marcas .home-title {
+.home-container .clientes .home-title {
   margin: 0px;
   padding: 0px;
   color: #303437;
@@ -599,7 +605,7 @@ body {
 
 .home-container .services .home-text,
 .home-container .certificada .home-text,
-.home-container .marcas .home-text {
+.home-container .clientes .home-text {
   color: #303437;
   font-size: 20px;
   font-weight: 300;
@@ -910,6 +916,44 @@ line-height: 1.5rem;
 }
 
 
+.home-container .marcas {
+  background: url('/assets/img/bg-marcas.jpg') no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  text-align: center;
+  padding: 100px 0px;
+}
+
+.home-container .marcas .home-title {
+margin: 0px;
+padding: 0px;
+color: #ffffff;
+font-size: 32px;
+margin-bottom: 35px;
+z-index: 1;
+font-weight: 300;
+}
+
+.home-container .marcas .home-title span {
+  margin: 0px;
+  padding: 0px;
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 35px;
+  z-index: 1;
+  font-weight: 700;
+  }
+
+.home-container .marcas .home-text {
+color: #ffffff;
+font-size: 20px;
+font-weight: 300;
+z-index: 1;
+position: relative;
+line-height: 1.5rem;
+}
+
+
 .marcas .montadoras .logo {
   display: -ms-flexbox !important;
   display: flex !important;
@@ -926,7 +970,7 @@ line-height: 1.5rem;
 }
 
   .marcas .montadoras {
-    width: 850px;
+    width: 100vw;
     display: block;
     margin: 0 auto;
     position: relative;
@@ -985,6 +1029,9 @@ line-height: 1.5rem;
 
 .social .row .brand {
   text-align: right;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .social .row .siga {
@@ -1018,6 +1065,26 @@ line-height: 1.5rem;
 
 /* Footer */
 
+@media only screen and (max-width: 768px) {
+  
+  .social .row .brand {
+    text-align: center!important;
+  }
+  
+  .social .row .siga {
+    text-align: center!important;
+  }
+
+  footer{
+    text-align: center;
+  }
+
+  .footer .input-group {
+    padding: 0 3rem 2rem 3rem!important;
+  }
+  
+}
+
 .footer {
   background-color: #2d3134;
   color: #fff;
@@ -1025,12 +1092,17 @@ line-height: 1.5rem;
 }
 
 .footer a{
-  color: #fff;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  z-index: 1;
+  position: relative;
+  line-height: 1.5rem;
   text-decoration: none;
 }
 
 .footer a:hover{
-  color: --blue-chroma;
+  color: var(--blue-chroma);
   text-decoration: none;
 }
 
