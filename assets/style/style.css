@@ -600,6 +600,12 @@ body {
   font-size: 32px;
   margin-bottom: 35px;
   z-index: 1;
+  font-weight: 300;
+}
+
+.home-container .services .home-title span,
+.home-container .certificada .home-title span,
+.home-container .clientes .home-title span {
   font-weight: 700;
 }
 
@@ -614,10 +620,8 @@ body {
   line-height: 1.5rem;
 }
 
-
 .home-container .kit {
   width: 100%;
-  height: 55vmin;
   background: url('/assets/img/bg-kit.jpg') no-repeat;
   background-position: center;
   position: relative;
@@ -627,7 +631,6 @@ body {
   text-align: center;
   padding: 100px 0px;
 }
-
 
 .home-container .kit .home-title,
 .home-container .numeros .home-title,
@@ -652,6 +655,52 @@ position: relative;
 line-height: 1.5rem;
 }
 
+
+.home-container .services .col-md-6 {
+  padding: 0px 60px;
+}
+
+.home-container .services .especialista form {
+  padding: 60px 30px;
+  background-color: #2d3134;
+}
+
+.home-container .services .especialista .form-group .form-control {
+  border-radius: 0;
+}
+
+.home-container .services .especialista button {
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  background-color: var(--blue-chroma);
+}
+
+.saiba__button {
+  color: #ffffff;
+  z-index: 1;
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+  padding: 15px 35px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.saiba__button i {
+  margin-left: 10px;
+}
+
+.saiba__button:hover {
+  color: var(--blue-chroma);
+  text-decoration: none;
+}
+
+.saiba__button:hover i {
+  margin-left: 15px;
+}
+
 .home-container .sistemas .sistemas-boxes {
   display: -ms-flexbox;
   display: flex;
@@ -659,7 +708,6 @@ line-height: 1.5rem;
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding-top: 30px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -672,6 +720,16 @@ line-height: 1.5rem;
     width: 100%!important;
   }
 
+  .home-container .sistemas .sistemas-boxes .left-box {
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+  }
+  
+  .home-container .sistemas .sistemas-boxes .right-box {
+    padding-right: 0px!important;
+    padding-left: 0px!important;
+  }
+
   .home-container .sistemas .sistemas-boxes .box:hover {
     width: 100% !important;
   }
@@ -682,8 +740,8 @@ line-height: 1.5rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-clip: content-box;
-  height: 375px;
-  width: 420px;
+  height: 450px;
+  width: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -692,31 +750,48 @@ line-height: 1.5rem;
   align-items: center;
   -ms-flex-direction: column;
   flex-direction: column;
-  cursor: pointer;
   transition: 0.5s all;
   position: relative;
   color: #fff;
   z-index: 1;
 }
 
+.home-container .sistemas .sistemas-boxes .left-box {
+  padding-left: 20%;
+  padding-right: 5%;
+}
+
+.home-container .sistemas .sistemas-boxes .right-box {
+  padding-right: 20%;
+  padding-left: 5%;
+}
+
 .home-container .sistemas .sistemas-boxes .box .title {
   z-index: 1;
   font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+}
+
+.home-container .sistemas .sistemas-boxes .box .title span {
+  z-index: 1;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .home-container .sistemas .sistemas-boxes .box .text {
   z-index: 1;
   font-size: 16px;
-  margin-top: 30px;
-  display: none;
+  margin-top: 20px;
+  text-align: center;
+  display: block;
   transition: 0.4 all;
 }
 
 .home-container .sistemas .sistemas-boxes .box .sistemas__button {
   z-index: 1;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .home-container .sistemas .sistemas-boxes .box .link i {
@@ -731,33 +806,28 @@ line-height: 1.5rem;
   height: 100%;
   display: block;
   z-index: 0;
-  background-color: #000;
-  opacity: 0.2;
+  background-color: #226764;
   transition: 0.4 all;
 }
 
 .home-container .sistemas .sistemas-boxes .box:hover {
-  width: 500px;
+  width: 100%;
 }
 
 .home-container .sistemas .sistemas-boxes .box:hover .overlay-box {
-  background-color: #226764;
+  background-color: #3cb4aa;
 }
 
 .home-container .sistemas .sistemas-boxes .box:hover .sistemas__button {
-  color: #000;
+  color: #2d3134;
   background-color: #fff;
-}
-
-.home-container .sistemas .sistemas-boxes .box:hover .text {
-  display: block;
+  text-decoration: none;
 }
 
 .sistemas__button {
   font-weight: 700;
   color: #fff;
   font-size: 16px;
-  text-transform: uppercase;
   letter-spacing: 0.2rem;
   padding: 15px 35px;
   border: 1px solid #fff;
@@ -769,7 +839,6 @@ line-height: 1.5rem;
   font-weight: 700;
   color: #000;
   font-size: 16px;
-  text-transform: uppercase;
   letter-spacing: 0.2rem;
   padding: 15px 35px;
   border: 1px solid #000;
@@ -783,96 +852,12 @@ line-height: 1.5rem;
   background: var(--bggradient);
 }
 
-
-
-.home-container .certificada img{
-  width: 80%;
-}
-
-@media only screen and (min-width: 768px) {
-  .home-container .certificada .home-title,
-  .home-container .certificada .home-text {
-    text-align: left;
-  }
-}
-
-.cover .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.cover .content {
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  padding-top: 19vmin;
-}
-
-.features .services {
-  position: relative;
-  z-index: 1;
-  width: 17rem;
-  height: 35rem;
-  padding-top: 3.5vmin;
-  margin: 1rem;
-}
-
-.features {
-  margin-top: -20vmin;
-}
-
-.services {  
-  overflow: hidden; 
-}
-
-.inner-img {
-  transition: 0.3s;
-}
-
-.inner-img:hover {
-  transform: scale(1.1);
-}
-
-
-.home-container .features .services .home-title{
-  margin: 0px;
-  padding: 0px;
-  color: #000;
-  font-size: 32px;
-  margin-top: 1rem;
-  margin-bottom: 5px;
-  z-index: 1;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.home-container .features .services .home-subtitle{
-  margin: 0px;
-  padding: 0px;
-  color: gray;
-  font-size: 32px;
-  margin-bottom: 15px;
-  z-index: 1;
-  font-weight: 700;
-  text-transform: lowercase;
-}
-
-.home-container .features .services .home-text {
-  color: #000;
-  font-size: 20px;
-  font-weight: 100;
-  z-index: 1;
-  position: relative;
-  line-height: 1.5rem;
-}
-
-@media only screen and (max-width: 768px) {
-  .cover {
-    height: 70vmin;
-  }
+.home-container .blindadora {
+  background: url('/assets/img/bg-blindadora.jpg') no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  text-align: center;
+  padding: 100px 0px;
 }
 
 .aling-itens {
@@ -884,37 +869,26 @@ line-height: 1.5rem;
   justify-content: flex-end;
 }
 
-.home-container .numeros {
-  text-align: center;
-  padding: 100px 0px;
-  background: url('/assets/img/evolution_faixa.png') no-repeat;
-  background-position: 100%;
-  background-size: cover;
-  background-color: #010810;
+.title-left {
+  text-align: right;
+  align-items: flex-end;
 }
 
-.numbers .rect {
-  position: relative;
-  z-index: 1;
-  background: transparent;
-  width: 14rem;
-  height: 14rem;
-  padding-top: 7vmin;
-  margin: 1rem;
-  border-radius: 20em;
-  border: 3px solid #cd7f32;
+.title-right {
+  text-align: left;
+  align-items: flex-start;
 }
 
-
-.numbers .rect h1 {
-  font-size: 3rem;
-  color: #ff7012;
+@media only screen and (max-width: 768px) {
+  .title-left {
+    text-align: center;
+  }
+  
+  .title-right {
+    text-align: center;
+    padding-bottom: 30px;
+  }
 }
-
-.numbers .rect > p {
-  color: #fff;;
-}
-
 
 .home-container .marcas {
   background: url('/assets/img/bg-marcas.jpg') no-repeat;
@@ -924,7 +898,8 @@ line-height: 1.5rem;
   padding: 100px 0px;
 }
 
-.home-container .marcas .home-title {
+.home-container .marcas .home-title,
+.home-container .blindadora .home-title {
 margin: 0px;
 padding: 0px;
 color: #ffffff;
@@ -934,7 +909,8 @@ z-index: 1;
 font-weight: 300;
 }
 
-.home-container .marcas .home-title span {
+.home-container .marcas .home-title span,
+.home-container .blindadora .home-title span {
   margin: 0px;
   padding: 0px;
   color: #ffffff;
@@ -944,7 +920,8 @@ font-weight: 300;
   font-weight: 700;
   }
 
-.home-container .marcas .home-text {
+.home-container .marcas .home-text,
+.home-container .blindadora .home-text {
 color: #ffffff;
 font-size: 20px;
 font-weight: 300;
@@ -970,7 +947,7 @@ line-height: 1.5rem;
 }
 
   .marcas .montadoras {
-    width: 100vw;
+    width: 80vw;
     display: block;
     margin: 0 auto;
     position: relative;
@@ -995,8 +972,7 @@ line-height: 1.5rem;
   }
 
   .marcas .montadoras i.right-arrow {
-    right: -120px;
-    background-image: url("/assets/img/arrow-next.png");
+    right: -100px;
   }
   
   @media only screen and (max-width: 600px) {
@@ -1006,8 +982,7 @@ line-height: 1.5rem;
   }
   
   .marcas .montadoras i.left-arrow {
-    left: -120px;
-    background-image: url("/assets/img/arrow-prev.png");
+    left: -100px;
   }
   
   @media only screen and (max-width: 600px) {
@@ -1052,6 +1027,10 @@ line-height: 1.5rem;
 .botoes button:hover{
   background: #2d3134;
   cursor: pointer;
+}
+
+.botoes button:hover i{
+  color: var(--blue-chroma);
 }
 
 
