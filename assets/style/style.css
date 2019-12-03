@@ -655,9 +655,18 @@ position: relative;
 line-height: 1.5rem;
 }
 
-
-.home-container .services .col-md-6 {
+.home-container .services .carcare {
   padding: 0px 60px;
+}
+
+.home-container .services .carcare .row .col-sm {
+  background: #f3f3f5;
+  padding: 10px;
+  margin: 10px;
+}
+
+.home-container .services .carcare .row .col-sm:hover {
+  background: #cecece;
 }
 
 .home-container .services .especialista form {
@@ -807,6 +816,7 @@ line-height: 1.5rem;
   display: block;
   z-index: 0;
   background-color: #226764;
+  opacity: 0.7;
   transition: 0.4 all;
 }
 
