@@ -24,6 +24,41 @@
     }); // end DOM ready
   })(jQuery);
 
+  // Carousel depoimentos
+
+  $(document).ready(function(){
+    $('.depoimentos').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: '<i class="left-arrow"></i>',
+    nextArrow: '<i class="right-arrow"></i>',
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    responsive: 
+    [
+    {
+       breakpoint: 600,
+       settings: {
+           infinite: true,
+           arrows: true,
+           slidesToShow: 2
+       }
+    },
+    {
+       breakpoint: 480,
+       settings: {
+           infinite: true,
+           arrows: true,
+           slidesToShow: 1
+       }
+    }
+    ]
+    });
+  });
+
+    // Carousel marcas
+
   $(document).ready(function(){
     $('.montadoras').slick({
     slidesToShow: 5,

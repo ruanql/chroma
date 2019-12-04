@@ -663,6 +663,7 @@ line-height: 1.5rem;
   background: #f3f3f5;
   padding: 10px;
   margin: 10px;
+  cursor: pointer;
 }
 
 .home-container .services .carcare .row .col-sm:hover {
@@ -683,6 +684,16 @@ line-height: 1.5rem;
   border: none;
   border-radius: 0;
   background-color: var(--blue-chroma);
+  font-size: 1.2em;
+}
+
+.home-container .services .especialista button i {
+  margin-left: 10px;
+  font-size: 1.6em;
+}
+
+.home-container .services .especialista button:hover {
+  background-color: #3cb4aa;
 }
 
 .saiba__button {
@@ -697,7 +708,7 @@ line-height: 1.5rem;
   transition: 0.3s;
 }
 
-.saiba__button i {
+.saiba__button img {
   margin-left: 10px;
 }
 
@@ -706,8 +717,9 @@ line-height: 1.5rem;
   text-decoration: none;
 }
 
-.saiba__button:hover i {
+.saiba__button:hover img {
   margin-left: 15px;
+  transition: 0.3s;
 }
 
 .home-container .sistemas .sistemas-boxes {
@@ -734,9 +746,17 @@ line-height: 1.5rem;
     padding-right: 0px!important;
   }
   
+  .home-container .sistemas .sistemas-boxes .left-box .text {
+    padding: 0 5vw;
+  }
+  
   .home-container .sistemas .sistemas-boxes .right-box {
     padding-right: 0px!important;
     padding-left: 0px!important;
+  }
+
+  .home-container .sistemas .sistemas-boxes .right-box .text {
+    padding: 0 5vw;
   }
 
   .home-container .sistemas .sistemas-boxes .box:hover {
@@ -766,11 +786,17 @@ line-height: 1.5rem;
 }
 
 .home-container .sistemas .sistemas-boxes .left-box {
+  background-image: url('/assets/img/icon-pintura.png'); 
+  background-size: 50%; 
+  background-position: 20vw;
   padding-left: 20%;
   padding-right: 5%;
 }
 
 .home-container .sistemas .sistemas-boxes .right-box {
+  background-image: url('/assets/img/icon-seguranca.png'); 
+  background-size: 30%; 
+  background-position: 20vh;
   padding-right: 20%;
   padding-left: 5%;
 }
@@ -816,7 +842,7 @@ line-height: 1.5rem;
   display: block;
   z-index: 0;
   background-color: #226764;
-  opacity: 0.7;
+  opacity: 0.8;
   transition: 0.4 all;
 }
 
@@ -940,6 +966,44 @@ position: relative;
 line-height: 1.5rem;
 }
 
+.clientes .depo {
+  padding: 0 7rem;
+  align-items: center;
+}
+
+.clientes .depo img {
+  display: inline;
+}
+
+.clientes .depoimentos .slick-dots {
+  padding-top: 5rem;
+}
+
+.clientes .depo .slick-dots li button {
+  color: #000!important;
+  background-color: #000!important;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  background: #226764!important;
+  color: black;
+}
+
+.slick-dots li button:before{
+  border: 2px solid #009688!important;
+}
+
+.clientes .depo .title-depo {
+  margin: 0px;
+  padding: 0px;
+  color: #226764;
+  font-size: 32px;
+  margin-bottom: 35px;
+  z-index: 1;
+  font-weight: 300;
+}
+
 
 .marcas .montadoras .logo {
   display: -ms-flexbox !important;
@@ -1045,7 +1109,7 @@ line-height: 1.5rem;
 
 
 .list-inline-item:not(:last-child) {
-  margin-right: 0px !important;
+  margin: 0px !important;
 }
 
 .social i{
@@ -1096,30 +1160,35 @@ line-height: 1.5rem;
 }
 
 .footer input{
-  background: transparent;
-  border: 1px solid var(--blue-chroma);
+  background: #313538;
+  border: none;
+  border-radius: unset;
+}
+
+.footer .input-group {
+  padding-right: 7rem; 
 }
 
 .footer input::placeholder{
-  background: transparent;
+  background: #313538;
   color: #fff;
 }
 
 .footer input:placeholder-shown{
-  background: transparent;
+  background: #313538;
   color: #fff;
 }
 
 .btn-cadastrar{
-  background: #2d3134;
-  font-weight: 500;
+  background: #3cb4aa;
+  font-weight: 300;
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
-  border: 1px solid var(--blue-chroma);
-  border-radius: 2px;
+  border: 1px solid #226764;
+  border-radius: unset;
 }
 
 .btn-cadastrar:hover{
-  background: #226764;
+  background: #2d3134;
 }
