@@ -722,6 +722,42 @@ line-height: 1.5rem;
   transition: 0.3s;
 }
 
+.home-container .floater-detail {
+  position: absolute;
+  top: 18%;
+  right: 0;
+  z-index: 0;
+}
+
+.home-container .floater-detail img {
+  width: 100%;
+  opacity: 0.3;
+}
+
+@media only screen and (max-width: 768px) {
+  .home-container .floater-detail {
+    display: none;
+  }
+}
+
+.home-container .floater-detail2 img {
+  width: 80%;
+  opacity: 0.3;
+}
+
+.home-container .floater-detail2 {
+  position: absolute;
+  bottom: 25%;
+  left: 0;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .home-container .floater-detail2 {
+    display: none;
+  }
+}
+
 .home-container .sistemas .sistemas-boxes {
   display: -ms-flexbox;
   display: flex;
