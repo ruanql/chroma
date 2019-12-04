@@ -143,10 +143,11 @@ button {
 :root {
   --Ubuntu-font: "Ubuntu", sans-serif;
   --light-black: #404042af;
-  --blue-chroma: #3b9c90;
+  --blue-chroma: #3d9a92;
   --light-blue: #67a59eaf;
   --bggradient: linear-gradient(to bottom, #010810, #070506);
   --light-gray: rgba(255, 255, 255, 0.877);
+  --gray-chroma: #2d3134;
 }
 
 body {
@@ -180,16 +181,14 @@ body {
     background: var(--light-blue);
     color: #fff;
     padding: 10vmin 120px;
-    z-index: 1;
-    cursor: pointer;
+    z-index: 0;
 }
 
 .inicial .row .col-md-6 .cartao-company{
   background: var(--light-black);
   color: #fff;
   padding: 10vmin 120px;
-  z-index: 1;
-  cursor: pointer;
+  z-index: 0;
 }
 
 
@@ -230,6 +229,32 @@ body {
   .inicial .row .col-md-6 .cartao-company a:hover {
     color: #fff;
     text-decoration: none;
+  }
+
+  .saiba__button {
+    color: #ffffff;
+    z-index: 1;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .saiba__button img {
+    margin-left: 10px;
+  }
+  
+  .saiba__button:hover {
+    color: var(--blue-chroma);
+    text-decoration: none;
+  }
+  
+  .saiba__button:hover img {
+    margin-left: 15px;
+    transition: 0.3s;
   }
 
   @media (max-width: 768px) {
