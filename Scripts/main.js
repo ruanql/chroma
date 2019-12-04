@@ -42,7 +42,7 @@
        settings: {
            infinite: true,
            arrows: true,
-           slidesToShow: 2
+           slidesToShow: 1
        }
     },
     {
