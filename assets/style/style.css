@@ -966,6 +966,12 @@ position: relative;
 line-height: 1.5rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .clientes .depo {
+    padding: initial!important;
+  }
+}
+
 .clientes .depo {
   padding: 0 7rem;
   align-items: center;
