@@ -177,20 +177,33 @@ body {
   padding-top: 15vmin;
 }
 
-.inicial .row .col-md-6 .cartao-you{
+.inicial .row .col-md-6 .cartao-you {
     background: var(--light-blue);
     color: #fff;
     padding: 10vmin 120px;
     z-index: 0;
+    transition: all ease .4s;
 }
 
-.inicial .row .col-md-6 .cartao-company{
+.inicial .row .col-md-6 .cartao-you:hover {
+  -webkit-transform: scale(1.10);
+  transform: scale(1.10);
+  box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.87);
+}
+
+.inicial .row .col-md-6 .cartao-company {
   background: var(--light-black);
   color: #fff;
   padding: 10vmin 120px;
   z-index: 0;
+  transition: all ease .4s;
 }
 
+.inicial .row .col-md-6 .cartao-company:hover {
+  -webkit-transform: scale(1.10);
+  transform: scale(1.10);
+  box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.87);
+}
 
  .inicial .row .col-md-6 .cartao-you h2,
  .inicial .row .col-md-6 .cartao-company h2 {
