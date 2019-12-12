@@ -277,6 +277,10 @@ body {
       margin-bottom: 10px;
     }
 
+    .inicial .row .col-md-6:last-child {
+      padding-bottom: 10vmin;
+    }
+
     .inicial .row .col-md-6 .cartao-you{
       padding: 10vmin;
   }
@@ -289,4 +293,81 @@ body {
   height: 100%;
 }
 
+}
+
+/* Footer */
+
+@media only screen and (max-width: 768px) {
+  
+  .social .row .brand {
+    text-align: center!important;
+  }
+  
+  .social .row .siga {
+    text-align: center!important;
+  }
+
+  footer{
+    text-align: center;
+  }
+
+  .footer .input-group {
+    padding: 0 3rem 2rem 3rem!important;
+  }
+  
+}
+
+.footer {
+  background-color: #2d3134;
+  color: #fff;
+  padding-top: 50px;
+}
+
+.footer a{
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  z-index: 1;
+  position: relative;
+  line-height: 1.5rem;
+  text-decoration: none;
+}
+
+.footer a:hover{
+  color: var(--blue-chroma);
+  text-decoration: none;
+}
+
+.footer input{
+  background: #313538;
+  border: none;
+  border-radius: unset;
+}
+
+.footer .input-group {
+  padding-right: 7rem; 
+}
+
+.footer input::placeholder{
+  background: #313538;
+  color: #fff;
+}
+
+.footer input:placeholder-shown{
+  background: #313538;
+  color: #fff;
+}
+
+.btn-cadastrar{
+  background: #3cb4aa;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid #226764;
+  border-radius: unset;
+}
+
+.btn-cadastrar:hover{
+  background: #2d3134;
 }
