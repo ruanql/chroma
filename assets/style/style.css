@@ -145,7 +145,7 @@ button {
   --light-black: #404042af;
   --blue-chroma: #3d9a92;
   --light-blue: #67a59eaf;
-  --bggradient: linear-gradient(to bottom, #010810, #070506);
+  --bggradient: linear-gradient(to left, #3d9a92, #226764);
   --light-gray: rgba(255, 255, 255, 0.877);
   --gray-chroma: #2d3134;
 }
@@ -163,6 +163,16 @@ body {
   text-align: center;
   position: relative;
   height: 80vh;
+}
+
+.contato-header {
+  background-image: url("/assets/img/contato-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  position: relative;
+  height: 70vh;
 }
 
 .carousel-indicators .active {
@@ -1103,6 +1113,130 @@ article {
 @media only screen and (max-width: 600px) {
   .marcas .montadoras i.left-arrow {
     left: 0;
+  }
+}
+
+/* Contato  */
+
+.contact-box {
+  position: relative;
+  padding-bottom: 70px;
+  z-index: 99;
+  height: 1200px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-box {
+    height: 100%;
+  }
+
+  .contact-box .container {
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.contact-box .container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.contact-box .container .form {
+  width: 35%;
+  background: #231f20;
+  color: #fff;
+  padding: 70px 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -ms-flex-pack: distribute;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  z-index: 99;
+  height: 1050px;
+  font-size: 16px;
+  font-weight: lighter;
+  position: relative;
+  top: -95px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-box .container .form {
+    width: 100%;
+    height: 100%;
+    top: -40px;
+  }
+}
+
+.contact-box .container .form .title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-box .container .form .subtitle {
+  margin-bottom: 20px;
+}
+
+.contact-box .container .form .contact-form {
+  width: 100%;
+  height: 600px;
+}
+
+.contact-box .container .form .contact-form label {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.contact-box .container .form .contact-form input,
+.contact-box .container .form .contact-form select,
+.contact-box .container .form .contact-form textarea {
+  background: none;
+  color: #fff;
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #fff;
+  margin-bottom: 30px;
+}
+
+.contact-box .container .form .contact-form select {
+  height: 50px;
+}
+
+.contact-box .container .form .contact-form .btn-enviar {
+  background: var(--bggradient);
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+  padding: 15px 35px;
+  cursor: pointer;
+  border: 1px solid #226764;
+  border-radius: unset;
+  border: none;
+  width: 100%;
+}
+
+.contact-box .container .form .contact-form .btn-enviar:hover {
+  background: var(--light-blue);
+}
+
+.contact-box .container .map {
+  width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-box .container .map {
+    text-align: center;
+    width: 100%;
+    height: 100%;
   }
 }
 
