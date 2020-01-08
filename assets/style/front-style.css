@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap");
 
 html,
 body,
@@ -151,44 +151,44 @@ button {
 }
 
 body {
-    font-family: 'Ubuntu', sans-serif!important;
-    font-size: 16px!important;
-  }
+  font-family: "Ubuntu", sans-serif !important;
+  font-size: 16px !important;
+}
 
 .main-cover {
-    background-image: url("/assets/img/Chroma_site-01.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    text-align: center;
-    position: relative;
-    height: 100vh;
-  }
+  background-image: url("/assets/img/Chroma_site-01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  position: relative;
+  height: 100vh;
+}
 
-  .main-header .menu {
-    -ms-flex-align: center;
-    align-items: center;
-    padding-top: 25px;
-  }
+.main-header .menu {
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 25px;
+}
 
-  /* Section-1 inicial */
+/* Section-1 inicial */
 
 .inicial {
   padding-top: 15vmin;
 }
 
 .inicial .row .col-md-6 .cartao-you {
-    background: var(--light-blue);
-    color: #fff;
-    padding: 10vmin 120px;
-    z-index: 0;
-    transition: all ease .4s;
+  background: var(--light-blue);
+  color: #fff;
+  padding: 10vmin 120px;
+  z-index: 0;
+  transition: all ease 0.4s;
 }
 
 .inicial .row .col-md-6 .cartao-you:hover {
-  -webkit-transform: scale(1.10);
-  transform: scale(1.10);
-  box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.87);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.87);
 }
 
 .inicial .row .col-md-6 .cartao-company {
@@ -196,125 +196,121 @@ body {
   color: #fff;
   padding: 10vmin 120px;
   z-index: 0;
-  transition: all ease .4s;
+  transition: all ease 0.4s;
 }
 
 .inicial .row .col-md-6 .cartao-company:hover {
-  -webkit-transform: scale(1.10);
-  transform: scale(1.10);
-  box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.87);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.87);
 }
 
- .inicial .row .col-md-6 .cartao-you h2,
- .inicial .row .col-md-6 .cartao-company h2 {
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 3rem;
+.inicial .row .col-md-6 .cartao-you h2,
+.inicial .row .col-md-6 .cartao-company h2 {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 3rem;
+}
+
+.inicial .row .col-md-6 .cartao-you span,
+.inicial .row .col-md-6 .cartao-company span {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+.inicial .row .col-md-6 .cartao-you p,
+.inicial .row .col-md-6 .cartao-company p {
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.inicial .row .col-md-6 .cartao-you a,
+.inicial .row .col-md-6 .cartao-company a {
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.inicial .row .col-md-6 .cartao-you i,
+.inicial .row .col-md-6 .cartao-company i {
+  padding-left: 8px;
+}
+
+.inicial .row .col-md-6 .cartao-you a:hover,
+.inicial .row .col-md-6 .cartao-company a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.saiba__button {
+  color: #ffffff;
+  z-index: 1;
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.saiba__button img {
+  margin-left: 10px;
+}
+
+.saiba__button:hover {
+  color: var(--blue-chroma);
+  text-decoration: none;
+}
+
+.saiba__button:hover img {
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .inicial .row .col-md-6 {
+    text-align: center !important;
+    margin-bottom: 10px;
   }
 
-  .inicial .row .col-md-6 .cartao-you span,
- .inicial .row .col-md-6 .cartao-company span {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 3rem;
-  }
-  
-  .inicial .row .col-md-6 .cartao-you p,
-  .inicial .row .col-md-6 .cartao-company p {
-    font-size: 18px;
-    font-weight: 300;
-    text-decoration: none;
+  .inicial .row .col-md-6:last-child {
+    padding-bottom: 10vmin;
   }
 
-  .inicial .row .col-md-6 .cartao-you a,
-  .inicial .row .col-md-6 .cartao-company a {
-    color: #fff;
-    font-weight: 300;
-    text-decoration: none;
-  }
-
-  .inicial .row .col-md-6 .cartao-you i,
-  .inicial .row .col-md-6 .cartao-company i {
-    padding-left: 8px;
-  }
-
-  .inicial .row .col-md-6 .cartao-you a:hover,
-  .inicial .row .col-md-6 .cartao-company a:hover {
-    color: #fff;
-    text-decoration: none;
-  }
-
-  .saiba__button {
-    color: #ffffff;
-    z-index: 1;
-    margin-top: 40px;
-    font-weight: 700;
-    font-size: 16px;
-    letter-spacing: 0.1rem;
-    padding: 15px 0;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .saiba__button img {
-    margin-left: 10px;
-  }
-  
-  .saiba__button:hover {
-    color: var(--blue-chroma);
-    text-decoration: none;
-  }
-  
-  .saiba__button:hover img {
-    margin-left: 15px;
-    transition: 0.3s;
-  }
-
-  @media (max-width: 768px) {
-
-    .inicial .row .col-md-6 {
-      text-align: center!important;
-      margin-bottom: 10px;
-    }
-
-    .inicial .row .col-md-6:last-child {
-      padding-bottom: 10vmin;
-    }
-
-    .inicial .row .col-md-6 .cartao-you{
-      padding: 10vmin;
-  }
-
-  .inicial .row .col-md-6 .cartao-company{
+  .inicial .row .col-md-6 .cartao-you {
     padding: 10vmin;
-}
+  }
 
-.main-cover{
-  height: 100%;
-}
+  .inicial .row .col-md-6 .cartao-company {
+    padding: 10vmin;
+  }
 
+  .main-cover {
+    height: 100%;
+  }
 }
 
 /* Footer */
 
 @media only screen and (max-width: 768px) {
-  
   .social .row .brand {
-    text-align: center!important;
-  }
-  
-  .social .row .siga {
-    text-align: center!important;
+    text-align: center !important;
   }
 
-  footer{
+  .social .row .siga {
+    text-align: center !important;
+  }
+
+  footer {
     text-align: center;
   }
 
   .footer .input-group {
-    padding: 0 3rem 2rem 3rem!important;
+    padding: 0 3rem 2rem 3rem !important;
   }
-  
 }
 
 .footer {
@@ -323,7 +319,7 @@ body {
   padding-top: 50px;
 }
 
-.footer a{
+.footer a {
   color: #ffffff;
   font-size: 16px;
   font-weight: 300;
@@ -333,32 +329,32 @@ body {
   text-decoration: none;
 }
 
-.footer a:hover{
+.footer a:hover {
   color: var(--blue-chroma);
   text-decoration: none;
 }
 
-.footer input{
+.footer input {
   background: #313538;
   border: none;
   border-radius: unset;
 }
 
 .footer .input-group {
-  padding-right: 7rem; 
+  padding-right: 7rem;
 }
 
-.footer input::placeholder{
+.footer input::placeholder {
   background: #313538;
   color: #fff;
 }
 
-.footer input:placeholder-shown{
+.footer input:placeholder-shown {
   background: #313538;
   color: #fff;
 }
 
-.btn-cadastrar{
+.btn-cadastrar {
   background: #3cb4aa;
   font-weight: 300;
   color: #fff;
@@ -368,6 +364,6 @@ body {
   border-radius: unset;
 }
 
-.btn-cadastrar:hover{
+.btn-cadastrar:hover {
   background: #2d3134;
 }
