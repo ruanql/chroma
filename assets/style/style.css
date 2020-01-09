@@ -175,17 +175,6 @@ body {
   height: 70vh;
 }
 
-.carousel-indicators .active {
-  background-color: var(--blue-chroma) !important;
-}
-
-.carousel-indicators li {
-  width: 60px !important;
-  height: 2px !important;
-  margin-right: 10px !important;
-  margin-left: 10px !important;
-}
-
 @media only screen and (max-width: 768px) {
   .main-header {
     background-position: center center;
@@ -256,6 +245,25 @@ body {
 .main-header .menu ul .active {
   border-color: var(--blue-chroma);
   color: var(--blue-chroma);
+}
+
+.dropdown-menu {
+    background-color: transparent!important;
+    border: none!important;
+}
+
+.dropdown-item {
+  padding: initial!important;
+}
+
+.dropdown-item:hover {
+  background-color: transparent!important;
+  border-color: var(--blue-chroma);
+  color: var(--blue-chroma);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 @media only screen and (max-width: 768px) {
