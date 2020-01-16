@@ -146,6 +146,7 @@ button {
   --blue-chroma: #3d9a92;
   --light-blue: #67a59eaf;
   --bggradient: linear-gradient(to left, #3d9a92, #226764);
+  --btngradient: linear-gradient(to top, #3a817d, #41b0a5);
   --light-gray: rgba(255, 255, 255, 0.877);
   --gray-chroma: #2d3134;
 }
@@ -163,6 +164,16 @@ body {
   text-align: center;
   position: relative;
   height: 80vh;
+}
+
+.kit-header {
+  background-image: url("/assets/img/bg-kit.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  position: relative;
+  height: 70vh;
 }
 
 .contato-header {
@@ -608,6 +619,12 @@ article {
   padding: 100px 0px;
 }
 
+.home-container .beneficios{
+  background: #f3f3f5;
+  text-align: left;
+  padding: 100px 0px;
+}
+
 .home-container .services .home-title,
 .home-container .certificada .home-title,
 .home-container .clientes .home-title {
@@ -615,6 +632,16 @@ article {
   padding: 0px;
   color: #303437;
   font-size: 32px;
+  margin-bottom: 35px;
+  z-index: 1;
+  font-weight: 300;
+}
+
+.home-container .services .home-subtitle {
+  margin: 0px;
+  padding: 0px;
+  color: #303437;
+  font-size: 26px;
   margin-bottom: 35px;
   z-index: 1;
   font-weight: 300;
@@ -631,6 +658,7 @@ article {
 .home-container .clientes .home-text {
   color: #303437;
   font-size: 20px;
+  margin-bottom: 35px;
   font-weight: 300;
   z-index: 1;
   position: relative;
@@ -1370,4 +1398,33 @@ article {
 
 .btn-cadastrar:hover {
   background: #2d3134;
+}
+
+.btn-orcamento {
+  background: var(--btngradient);
+  margin-top: 40px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+  padding: 15px 35px;
+  cursor: pointer;
+  border-radius: unset;
+}
+
+.btn-orcamento:hover {
+  background: #3cb4aa;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0px 2px 20px -5px rgba(70, 50, 50, 0.87);
+}
+
+.btn-orcamento img {
+  margin-left: 10px;
+}
+
+.btn-orcamento:hover img {
+  margin-left: 12px;
+  transition: 0.3s;
 }
