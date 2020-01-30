@@ -629,6 +629,7 @@ article {
 .home-container .services .home-title,
 .home-container .certificada .home-title,
 .home-container .clientes .home-title,
+.home-container .beneficios .home-title,
 .home-container .procedimento .home-title {
   margin: 0px;
   padding: 0px;
@@ -658,7 +659,8 @@ article {
 
 .home-container .services .home-text,
 .home-container .certificada .home-text,
-.home-container .clientes .home-text, 
+.home-container .clientes .home-text,
+.home-container .beneficios .home-text, 
 .home-container .procedimento .home-text {
   color: #303437;
   font-size: 20px;
@@ -834,9 +836,17 @@ article {
   color: #455269;
   opacity: 0.5;
   font-size: 7rem;
+  line-height: 0.5em;
   margin-bottom: 15px;
   z-index: 1;
   font-weight: 900;
+}
+.home-container .beneficios .col-md-3{
+  transition: all ease 0.2s;
+}
+
+.home-container .beneficios .col-md-3:hover{
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 768px) {
