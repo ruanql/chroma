@@ -176,6 +176,16 @@ body {
   height: 70vh;
 }
 
+.case-header {
+  background-image: url("/assets/img/case-banner1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  position: relative;
+  height: 70vh;
+}
+
 .contato-header {
   background-image: url("/assets/img/contato-banner.png");
   background-repeat: no-repeat;
@@ -860,7 +870,7 @@ article {
   }
 
   .home-container .beneficios .col-12{
-    padding-bottom: 35px;
+    padding-bottom: 70px;
   }
 
   .home-container .beneficios .col-12:last-child{
