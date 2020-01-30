@@ -614,7 +614,8 @@ article {
 
 .home-container .services,
 .home-container .certificada,
-.home-container .clientes {
+.home-container .clientes,
+.home-container .procedimento {
   text-align: center;
   padding: 100px 0px;
 }
@@ -627,7 +628,8 @@ article {
 
 .home-container .services .home-title,
 .home-container .certificada .home-title,
-.home-container .clientes .home-title {
+.home-container .clientes .home-title,
+.home-container .procedimento .home-title {
   margin: 0px;
   padding: 0px;
   color: #303437;
@@ -649,13 +651,15 @@ article {
 
 .home-container .services .home-title span,
 .home-container .certificada .home-title span,
-.home-container .clientes .home-title span {
+.home-container .clientes .home-title span,
+.home-container .procedimento .home-title span {
   font-weight: 700;
 }
 
 .home-container .services .home-text,
 .home-container .certificada .home-text,
-.home-container .clientes .home-text {
+.home-container .clientes .home-text, 
+.home-container .procedimento .home-text {
   color: #303437;
   font-size: 20px;
   margin-bottom: 35px;
@@ -780,8 +784,23 @@ article {
   opacity: 0.3;
 }
 
+.home-container .floater-detail-kit {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  z-index: 0;
+}
+
+.home-container .floater-detail-kit img {
+  width: 100%;
+  opacity: 0.3;
+}
+
 @media only screen and (max-width: 768px) {
   .home-container .floater-detail {
+    display: none;
+  }
+  .home-container .floater-detail-kit {
     display: none;
   }
 }
@@ -802,6 +821,57 @@ article {
   .home-container .floater-detail2 {
     display: none;
   }
+}
+
+.home-container .beneficios img{
+  height: 100px;
+  padding-bottom: 2em;
+}
+
+.home-container .number-shadow{
+  margin: 0px;
+  padding: 0px;
+  color: #455269;
+  opacity: 0.5;
+  font-size: 7rem;
+  margin-bottom: 15px;
+  z-index: 1;
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 768px) {
+  .home-container .services .kit-rev {
+    text-align: center!important;
+    padding-bottom: 2em;
+  }
+
+  .home-container .beneficios{
+    text-align: center;
+  }
+
+  .home-container .beneficios .col-12{
+    padding-bottom: 35px;
+  }
+
+  .home-container .beneficios .col-12:last-child{
+    padding-bottom: initial;
+  }
+
+}
+
+.home-container .procedimento .col-sm {
+  flex-grow: 0.05;
+}
+
+.home-container .procedimento .col-sm img{
+  height: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+  .home-container .procedimento .col-sm {
+    padding-bottom: 1em;
+  }
+
 }
 
 .home-container .sistemas .sistemas-boxes {
