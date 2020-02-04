@@ -186,6 +186,16 @@ body {
   height: 70vh;
 }
 
+.empresa-header {
+  background-image: url("/assets/img/bg-empresa.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  position: relative;
+  height: 70vh;
+}
+
 .contato-header {
   background-image: url("/assets/img/contato-banner.png");
   background-repeat: no-repeat;
@@ -1039,8 +1049,15 @@ article {
   letter-spacing: 0.2rem;
   padding: 15px 35px;
   border: 1px solid #fff;
+  margin-top: 20px;
   cursor: pointer;
   transition: 0.4s;
+}
+
+.sistemas__button:hover {
+  color: #2d3134!important;
+  background-color: #fff;
+  text-decoration: none;
 }
 
 .saiba-mais__button {
@@ -1107,7 +1124,8 @@ article {
 }
 
 .home-container .marcas .home-title,
-.home-container .blindadora .home-title {
+.home-container .blindadora .home-title,
+.home-container .logistica .home-title  {
   margin: 0px;
   padding: 0px;
   color: #ffffff;
@@ -1118,7 +1136,8 @@ article {
 }
 
 .home-container .marcas .home-title span,
-.home-container .blindadora .home-title span {
+.home-container .blindadora .home-title span,
+.home-container .logistica .home-title span {
   margin: 0px;
   padding: 0px;
   color: #ffffff;
@@ -1129,7 +1148,8 @@ article {
 }
 
 .home-container .marcas .home-text,
-.home-container .blindadora .home-text {
+.home-container .blindadora .home-text,
+.home-container .logistica .home-text {
   color: #ffffff;
   font-size: 20px;
   font-weight: 300;
@@ -1240,6 +1260,20 @@ article {
   .marcas .montadoras i.left-arrow {
     left: 0;
   }
+}
+
+
+.home-container .logistica {
+  background: var(--bggradient);
+  padding: 100px 0px;
+}
+
+.home-container .logistica a:hover {
+  color: #fff;
+}
+
+.home-container .logistica .col-md-6:first-child{
+  text-align: left;
 }
 
 /* Contato  */
