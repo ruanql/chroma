@@ -657,13 +657,20 @@ article {
   padding: 100px 0px;
 }
 
+.home-container .cli-servicos {
+  background: #f3f3f5;
+  text-align: center;
+  padding: 100px 0px;
+}
+
 .home-container .services .home-title,
 .home-container .certificada .home-title,
 .home-container .clientes .home-title,
 .home-container .beneficios .home-title,
 .home-container .procedimento .home-title,
 .home-container .vistoria .home-title,
-.home-container .unidades .home-title {
+.home-container .unidades .home-title,
+.home-container .empresas .home-title {
   margin: 0px;
   padding: 0px;
   color: #303437;
@@ -688,7 +695,8 @@ article {
 .home-container .clientes .home-title span,
 .home-container .procedimento .home-title span,
 .home-container .vistoria .home-title span,
-.home-container .unidades .home-title span {
+.home-container .unidades .home-title span,
+.home-container .empresas .home-title span {
   font-weight: 700;
 }
 
@@ -840,6 +848,18 @@ article {
 }
 
 .home-container .floater-detail-kit img {
+  width: 100%;
+  opacity: 0.3;
+}
+
+.home-container .floater-detail-servicos {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  z-index: 0;
+}
+
+.home-container .floater-detail-servicos img {
   width: 100%;
   opacity: 0.3;
 }
@@ -1339,6 +1359,12 @@ article {
   padding: 100px 0px;
 }
 
+.home-container .empresas {
+  background: #fff;
+  text-align: center;
+  padding: 100px 0px;
+}
+
 .home-container .marcas .home-title,
 .home-container .blindadora .home-title,
 .home-container .logistica .home-title  {
@@ -1438,6 +1464,10 @@ article {
   display: block;
   margin: 0 auto;
   position: relative;
+}
+
+.slick-slide img {
+  display: initial !important;
 }
 
 @media only screen and (max-width: 1200px) {
