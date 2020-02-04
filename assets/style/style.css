@@ -196,6 +196,16 @@ body {
   height: 70vh;
 }
 
+.servico-header {
+  background-image: url("/assets/img/vistoria-banner1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  position: relative;
+  height: 70vh;
+}
+
 .contato-header {
   background-image: url("/assets/img/contato-banner.png");
   background-repeat: no-repeat;
@@ -640,7 +650,8 @@ article {
   padding: 100px 0px;
 }
 
-.home-container .beneficios{
+.home-container .beneficios,
+.home-container .vistoria {
   background: #f3f3f5;
   text-align: left;
   padding: 100px 0px;
@@ -650,7 +661,9 @@ article {
 .home-container .certificada .home-title,
 .home-container .clientes .home-title,
 .home-container .beneficios .home-title,
-.home-container .procedimento .home-title {
+.home-container .procedimento .home-title,
+.home-container .vistoria .home-title,
+.home-container .unidades .home-title {
   margin: 0px;
   padding: 0px;
   color: #303437;
@@ -673,7 +686,9 @@ article {
 .home-container .services .home-title span,
 .home-container .certificada .home-title span,
 .home-container .clientes .home-title span,
-.home-container .procedimento .home-title span {
+.home-container .procedimento .home-title span,
+.home-container .vistoria .home-title span,
+.home-container .unidades .home-title span {
   font-weight: 700;
 }
 
@@ -681,7 +696,8 @@ article {
 .home-container .certificada .home-text,
 .home-container .clientes .home-text,
 .home-container .beneficios .home-text, 
-.home-container .procedimento .home-text {
+.home-container .procedimento .home-text,
+.home-container .vistoria .home-text {
   color: #303437;
   font-size: 20px;
   margin-bottom: 35px;
@@ -689,6 +705,16 @@ article {
   z-index: 1;
   position: relative;
   line-height: 1.5rem;
+}
+
+.home-container .vistoria a {
+  color: var(--gray-chroma);
+}
+
+.home-container .unidades {
+  background: #f3f3f5;
+  text-align: center;
+  padding: 100px 0px;
 }
 
 .home-container .kit {
@@ -839,10 +865,27 @@ article {
   z-index: 0;
 }
 
+.home-container .floater-detail-empresa img {
+  width: 80%;
+  opacity: 0.3;
+}
+
+.home-container .floater-detail-empresa {
+  position: absolute;
+  bottom: 35%;
+  left: 0;
+  z-index: 0;
+}
+
 @media only screen and (max-width: 768px) {
+
   .home-container .floater-detail2 {
     display: none;
   }
+  .home-container .floater-detail-empresa {
+    display: none;
+  }
+
 }
 
 .home-container .beneficios img{
@@ -1060,6 +1103,144 @@ article {
   text-decoration: none;
 }
 
+/* --- Boxes case */
+
+.home-container .cases-box .sistemas-boxes {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .home-container .cases-box .sistemas-boxes {
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .home-container .cases-box .sistemas-boxes .box {
+    width: 100% !important;
+  }
+
+  .home-container .cases-box .sistemas-boxes .left-box {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .home-container .cases-box .sistemas-boxes .left-box .text {
+    padding: 0 5vw;
+  }
+
+  .home-container .cases-box .sistemas-boxes .right-box {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+
+  .home-container .cases-box .sistemas-boxes .right-box .text {
+    padding: 0 5vw;
+  }
+
+  .home-container .cases-box .sistemas-boxes .box:hover {
+    width: 100% !important;
+  }
+}
+
+.home-container .cases-box .sistemas-boxes .box {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  height: 450px;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  transition: 0.5s all;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+}
+
+.home-container .cases-box .sistemas-boxes .left-box {
+  background-image: url("/assets/img/empresa-case1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.home-container .cases-box .sistemas-boxes .right-box {
+  background-image: url("/assets/img/empresa-case2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.home-container .cases-box .sistemas-boxes .box .title {
+  z-index: 1;
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.home-container .cases-box .sistemas-boxes .box .title span {
+  z-index: 1;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.home-container .cases-box .sistemas-boxes .box .text {
+  z-index: 1;
+  font-size: 16px;
+  margin-top: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  display: block;
+  transition: 0.4 all;
+}
+
+.home-container .cases-box .sistemas-boxes .box .sistemas__button {
+  z-index: 1;
+  margin-top: 20px;
+}
+
+.home-container .cases-box .sistemas-boxes .box .link i {
+  margin-left: 10px;
+}
+
+.home-container .cases-box .sistemas-boxes .box .overlay-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  background-color: #202020;
+  opacity: 0.5;
+  transition: 0.4 all;
+}
+
+.home-container .cases-box .sistemas-boxes .box:hover {
+  width: 100%;
+}
+
+.home-container .cases-box .sistemas-boxes .box:hover .overlay-box {
+  background-color: #3cb4aa;
+}
+
+.home-container .cases-box .sistemas-boxes .box:hover .sistemas__button {
+  color: #2d3134;
+  background-color: #fff;
+  text-decoration: none;
+}
+
 .saiba-mais__button {
   font-weight: 700;
   color: #000;
@@ -1085,6 +1266,23 @@ article {
   padding: 100px 0px;
 }
 
+
+.home-container .vistoria .row .col-md-6:first-child {
+  z-index: 2;
+}
+
+.home-container .vistoria .row .col-md-6:first-child img {
+  width: 90%;
+}
+
+.home-container .vistoria .row .col-md-6 {
+  padding: 0 2em!important;
+}
+
+.home-container .vistoria .row .col-md-6 a {
+  color: #fff;
+}
+
 .aling-itens {
   display: -ms-flexbox;
   display: flex;
@@ -1104,7 +1302,25 @@ article {
   align-items: flex-start;
 }
 
+.text-blue-chroma {
+  margin: 0px;
+  padding: 0px;
+  font-size: 18px;
+  z-index: 1;
+  font-weight: 700;
+  color: var(--blue-chroma);
+}
+
 @media only screen and (max-width: 768px) {
+
+  .home-container .vistoria  {
+    text-align: center;
+  }
+
+  .home-container .vistoria .col-12:first-child img {
+    padding-bottom: 2em;
+  }
+
   .title-left {
     text-align: center;
   }
@@ -1275,6 +1491,38 @@ article {
 .home-container .logistica .col-md-6:first-child{
   text-align: left;
 }
+
+.home-container .logistica .col-md-6:last-child {
+  padding-top: 3em;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .home-container .logistica .col-md-6:first-child{
+    text-align: center;
+  }
+
+}
+
+.home-container .diferenciais {
+  background: var(--bggradient);
+  color: #fff;
+  text-align: left;
+  padding: 100px 0px;
+}
+
+.list-group-item {
+  display: flex!important;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.list-group-item img {
+  padding-right: 1.6em;
+  vertical-align: middle;
+  height: fit-content;
+}
+
 
 /* Contato  */
 
