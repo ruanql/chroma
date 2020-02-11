@@ -663,6 +663,12 @@ article {
   padding: 100px 0px;
 }
 
+.home-container .consultor{
+  background: url('/assets/img/case-banner2.png');
+  text-align: center;
+  padding: 100px 0px;
+}
+
 .home-container .services .home-title,
 .home-container .certificada .home-title,
 .home-container .clientes .home-title,
@@ -723,6 +729,27 @@ article {
   background: #f3f3f5;
   text-align: center;
   padding: 100px 0px;
+}
+
+.home-container .desafios{
+  background: #f3f3f5;
+}
+
+.home-container .desafios .text-left {
+  align-self: center;
+}
+
+.home-container .solution {
+  background: var(--bggradient);
+  text-align: left;
+  padding: 100px 0px;
+}
+
+.home-container .solution .bg-check {
+  background: url('/assets/img/kitRev-icone3.png') no-repeat;
+  background-position: right;
+  background-size: contain;
+  backdrop-filter: darken;
 }
 
 .home-container .kit {
@@ -1367,7 +1394,9 @@ article {
 
 .home-container .marcas .home-title,
 .home-container .blindadora .home-title,
-.home-container .logistica .home-title  {
+.home-container .logistica .home-title,
+.home-container .solution .home-title,
+.home-container .consultor .home-title  {
   margin: 0px;
   padding: 0px;
   color: #ffffff;
@@ -1391,7 +1420,9 @@ article {
 
 .home-container .marcas .home-text,
 .home-container .blindadora .home-text,
-.home-container .logistica .home-text {
+.home-container .logistica .home-text,
+.home-container .solution .home-text,
+.home-container .consultor .home-text {
   color: #ffffff;
   font-size: 20px;
   font-weight: 300;
