@@ -176,6 +176,16 @@ body {
   height: 70vh;
 }
 
+.chroma-header {
+  background-image: url("/assets/img/Chroma_site-01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  position: relative;
+  height: 70vh;
+}
+
 .case-header {
   background-image: url("/assets/img/case-banner1.png");
   background-repeat: no-repeat;
@@ -749,7 +759,7 @@ article {
   background: url('/assets/img/kitRev-icone3.png') no-repeat;
   background-position: right;
   background-size: contain;
-  backdrop-filter: darken;
+  background-blend-mode: overlay;
 }
 
 .home-container .kit {
