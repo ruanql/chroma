@@ -163,7 +163,7 @@ body {
   background-position: center center;
   text-align: center;
   position: relative;
-  height: 80vh;
+  height: 70vh;
 }
 
 .kit-header {
@@ -1326,6 +1326,8 @@ article {
   background-size: cover;
   text-align: center;
   padding: 100px 0px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 
