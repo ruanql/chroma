@@ -161,12 +161,15 @@
               <div class="row justify-content-md-start mb-5">
                 <div class="col-md-6 col-12">
                   <p>RECEBA NOSSA NEWSLETTER</p>
-                  <div class="input-group pb-3">
-                      <input type="email" class="form-control" aria-label="Email" placeholder="Digite seu e-mail" aria-describedby="inputGroup-sizing-default">
+                  <form class="block-inscrevase" name="news" id="contactform" method="POST" action="https://formsubmit.io/send/2c885c78-14cb-452f-ae81-f75e82bd3cbd">
+                    <input name="_redirect" type="hidden" id="name" value="https://chroma-webapp.netlify.com/news-obrigado.html">
+                    <div class="input-group pb-3">
+                      <input type="email" name="email" class="form-control" aria-label="Email" placeholder="Digite seu e-mail" aria-describedby="inputGroup-sizing-default"/>
                     <div class="input-group-prepend">
-                      <button class="btn-cadastrar" id="inputGroup-sizing-default">Cadastrar <img src="/assets/img/arrow-chroma-white.png" alt="Seta-chroma"></button>
+                      <button type="submit" class="btn-cadastrar" id="inputGroup-sizing-default">Cadastrar <img src="/assets/img/arrow-chroma-white.png" alt="Seta-chroma"></button>
                     </div>
                   </div>
+                </form>
                 </div>
                 <div class="col-md-2 col-12">
                   <p><a href="/chroma.html">GRUPO CHROMA</a></p>
