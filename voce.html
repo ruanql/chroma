@@ -151,10 +151,10 @@
                             <div>
                               <form>
                                 <div class="form-group">
-                                  <input type="name" class="form-control" id="nome" placeholder="Nome">
+                                  <input type="name" class="form-control" id="nome" placeholder="Seu nome">
                                 </div>
                                 <div class="form-group">
-                                  <select class="form-control" id="exampleFormControlSelect1">
+                                  <select class="form-control" id="mensagem">
                                     <option>Escolha o serviço</option>
                                     <option>Higienização interna</option>
                                     <option>Hidratação de couro</option>
@@ -172,7 +172,7 @@
                                     <option>PPF</option>
                                   </select>
                                 </div>
-                                <button type="submit" class="btn btn-block">Solicitar contato agora <i class="fa fa-whatsapp"></i></button>
+                                <button onclick="enviarMensagem()" class="btn btn-block"> Solicitar contato agora <i class="fa fa-whatsapp"></i></button>
                               </form>
                             </div>
                           </div>
@@ -346,3 +346,18 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"></script>
 <script src="/Scripts/main.js"></script>
 <script src="/Content/Plugins/Bootstrap/bootstrap.min.js"></script>
+
+<script>
+
+  // Wpp api
+
+  function enviarMensagem(){
+    var nome = document.querySelector("#nome").value;
+    
+    var servico = document.querySelector("#mensagem").value;
+    servico = window.encodeURIComponent(servico);
+    
+    window.open("https://wa.me/5514981514605?text=Olá,%20meu%20nome%20é%20" + nome + "%20gostaria%20de%20saber%20mais%20sobre%20o%20serviço%20de%20" + servico, "_blank");
+  }
+
+</script>

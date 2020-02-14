@@ -24,6 +24,8 @@
     }); // end DOM ready
   })(jQuery);
 
+  
+
   // Carousel depoimentos
 
   $(document).ready(function(){
