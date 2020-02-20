@@ -1614,7 +1614,7 @@ article {
   position: relative;
   padding-bottom: 70px;
   z-index: 99;
-  height: 1200px;
+  height: auto;
 }
 
 @media only screen and (max-width: 768px) {
