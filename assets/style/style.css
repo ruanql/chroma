@@ -806,7 +806,9 @@ article {
   background: #f3f3f5;
   padding: 10px;
   margin: 10px;
+  border-radius: 5px;
   cursor: pointer;
+  transition: 0.4s ease;
 }
 
 .home-container .services .carcare .row .col-sm a {
@@ -816,23 +818,26 @@ article {
 
 .home-container .services .carcare .row .col-sm:hover {
   background: #cecece;
+  transform: scale(1.1);
 }
 
 .home-container .services .especialista form {
   padding: 60px 30px;
   background-color: #2d3134;
+  border-radius: 5px;
 }
 
 .home-container .services .especialista .form-group .form-control {
-  border-radius: 0;
+  border-radius: 5px;
 }
 
 .home-container .services .especialista button {
   color: #fff;
   border: none;
-  border-radius: 0;
+  border-radius: 5px;
   background-color: var(--blue-chroma);
   font-size: 1.2em;
+  transition: 0.4s ease;
 }
 
 .home-container .services .especialista button i {
@@ -842,6 +847,7 @@ article {
 
 .home-container .services .especialista button:hover {
   background-color: #3cb4aa;
+  transform: scale(1.05);
 }
 
 .saiba__button {
@@ -884,7 +890,7 @@ article {
 
 .home-container .floater-detail-kit {
   position: absolute;
-  top: 10%;
+  top: 15%;
   right: 0;
   z-index: 0;
 }
@@ -1642,6 +1648,7 @@ article {
   background: #231f20;
   color: #fff;
   padding: 70px 50px;
+  border-radius: 5px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: center;
