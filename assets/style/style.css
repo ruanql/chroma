@@ -728,7 +728,7 @@ article {
   font-weight: 300;
   z-index: 1;
   position: relative;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
 }
 
 .home-container .vistoria a {
@@ -795,7 +795,7 @@ article {
   font-weight: 100;
   z-index: 1;
   position: relative;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
 }
 
 .home-container .services .carcare {
@@ -878,7 +878,7 @@ article {
 
 .home-container .floater-detail {
   position: absolute;
-  top: 18%;
+  top: 20%;
   right: 0;
   z-index: 0;
 }
@@ -1457,7 +1457,7 @@ article {
   font-weight: 300;
   z-index: 1;
   position: relative;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
 }
 
 @media only screen and (max-width: 768px) {
