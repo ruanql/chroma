@@ -877,6 +877,35 @@ article {
   transition: 0.3s;
 }
 
+.white__button {
+  background: none;
+  margin-top: 40px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+  padding: 15px 35px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: unset;
+}
+
+.white__button img {
+  margin-left: 10px;
+}
+
+.white__button:hover {
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0px 2px 20px -5px rgba(255, 255, 255, 0.47);
+}
+
+.white__button:hover img {
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
 .home-container .floater-detail {
   position: absolute;
   top: 20%;
