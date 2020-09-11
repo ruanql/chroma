@@ -162,7 +162,7 @@ body {
   background-position: center center;
   text-align: center;
   position: relative;
-  height: 100vh;
+  height: auto;
 }
 
 .main-header .menu {
@@ -175,6 +175,7 @@ body {
 
 .inicial {
   padding-top: 15vmin;
+  padding-bottom: 15vmin;
 }
 
 .inicial .row .col-md-6 .cartao-you {
@@ -207,6 +208,21 @@ body {
   box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.87);
 }
 
+.inicial .row .col-md-12 .cartao-company {
+  background: linear-gradient(90deg, rgba(79,172,164,0.40379901960784315) 0%, rgba(139,105,21,0.4458158263305322) 100%);
+  color: #fff;
+  padding: 10vmin 120px;
+  z-index: 0;
+  transition: all ease 0.4s;
+  cursor: pointer;
+}
+
+.inicial .row .col-md-12 .cartao-company:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.87);
+}
+
 .inicial .row .col-md-6 .cartao-you h2,
 .inicial .row .col-md-6 .cartao-company h2 {
   font-size: 32px;
@@ -229,7 +245,8 @@ body {
 }
 
 .inicial .row .col-md-6 .cartao-you a,
-.inicial .row .col-md-6 .cartao-company a {
+.inicial .row .col-md-6 .cartao-company a,
+.inicial .row .col-md-12 .cartao-company a {
   color: #fff;
   font-weight: 300;
   text-decoration: none;
