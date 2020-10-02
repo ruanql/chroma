@@ -178,87 +178,92 @@ body {
   padding-bottom: 15vmin;
 }
 
-.inicial .row .col-md-6 .cartao-you {
+.inicial .row .col-md-4 .cartao-you {
   background: var(--light-blue);
   color: #fff;
-  padding: 10vmin 120px;
+  padding: 10vmin 35px;
   z-index: 0;
   transition: all ease 0.4s;
   cursor: pointer;
 }
 
-.inicial .row .col-md-6 .cartao-you:hover {
+.inicial .row .col-md-4 .cartao-you:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.87);
 }
 
-.inicial .row .col-md-6 .cartao-company {
+.inicial .row .col-md-4 .cartao-company {
   background: var(--light-black);
   color: #fff;
-  padding: 10vmin 120px;
+  padding: 10vmin 35px;
   z-index: 0;
   transition: all ease 0.4s;
   cursor: pointer;
 }
 
-.inicial .row .col-md-6 .cartao-company:hover {
+.inicial .row .col-md-4 .cartao-company:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.87);
 }
 
-.inicial .row .col-md-12 .cartao-company {
-  background: linear-gradient(90deg, rgba(79,172,164,0.700717787114846) 0%, rgba(139,105,21,0.8547794117647058) 45%);
+.inicial .row .col-md-4 .cartao-liquido {
+  background: linear-gradient(90deg, rgba(79,172,164,0.700717787114846) 0%, rgba(139,105,21,0.8547794117647058) 50%);
   color: #fff;
-  padding: 10vmin 120px;
+  padding: 10vmin 35px;
   z-index: 0;
   transition: all ease 0.4s;
   cursor: pointer;
 }
 
-.inicial .row .col-md-12 .cartao-company:hover {
+.inicial .row .col-md-4 .cartao-liquido:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.87);
 }
 
-.inicial .row .col-md-6 .cartao-you h2,
-.inicial .row .col-md-6 .cartao-company h2 {
+.inicial .row .col-md-4 .cartao-you h2,
+.inicial .row .col-md-4 .cartao-company h2,
+.inicial .row .col-md-4 .cartao-liquido h2 {
   font-size: 32px;
   font-weight: 300;
   line-height: 3rem;
 }
 
-.inicial .row .col-md-6 .cartao-you span,
-.inicial .row .col-md-6 .cartao-company span {
+.inicial .row .col-md-4 .cartao-you span,
+.inicial .row .col-md-4 .cartao-company span,
+.inicial .row .col-md-4 .cartao-liquido span {
   font-size: 32px;
   font-weight: 700;
   line-height: 3rem;
 }
 
-.inicial .row .col-md-6 .cartao-you p,
-.inicial .row .col-md-6 .cartao-company p {
+.inicial .row .col-md-4 .cartao-you p,
+.inicial .row .col-md-4 .cartao-company p,
+.inicial .row .col-md-4 .cartao-liquido p {
   font-size: 18px;
   font-weight: 300;
   text-decoration: none;
 }
 
-.inicial .row .col-md-6 .cartao-you a,
-.inicial .row .col-md-6 .cartao-company a,
-.inicial .row .col-md-12 .cartao-company a {
+.inicial .row .col-md-4 .cartao-you a,
+.inicial .row .col-md-4 .cartao-company a,
+.inicial .row .col-md-4 .cartao-liquido a {
   color: #fff;
   font-weight: 300;
   text-decoration: none;
 }
 
-.inicial .row .col-md-6 .cartao-you i,
-.inicial .row .col-md-6 .cartao-company i {
+.inicial .row .col-md-4 .cartao-you i,
+.inicial .row .col-md-4 .cartao-company i,
+.inicial .row .col-md-4 .cartao-liquido i {
   padding-left: 8px;
 }
 
-.inicial .row .col-md-6 .cartao-you a:hover,
-.inicial .row .col-md-6 .cartao-company a:hover {
+.inicial .row .col-md-4 .cartao-you a:hover,
+.inicial .row .col-md-4 .cartao-company a:hover,
+.inicial .row .col-md-4 .cartao-liquido a:hover {
   color: #fff;
   text-decoration: none;
 }
@@ -290,20 +295,20 @@ body {
 }
 
 @media (max-width: 768px) {
-  .inicial .row .col-md-6 {
+  .inicial .row .col-md-4 {
     text-align: center !important;
     margin-bottom: 10px;
   }
 
-  .inicial .row .col-md-6:last-child {
+  .inicial .row .col-md-4:last-child {
     padding-bottom: 10vmin;
   }
 
-  .inicial .row .col-md-6 .cartao-you {
+  .inicial .row .col-md-4 .cartao-you {
     padding: 10vmin;
   }
 
-  .inicial .row .col-md-6 .cartao-company {
+  .inicial .row .col-md-4 .cartao-company {
     padding: 10vmin;
   }
 
