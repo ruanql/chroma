@@ -802,14 +802,25 @@ article {
   padding: 0px 60px;
 }
 
-.home-container .services .carcare .row .col-sm {
+
+
+.home-container .services .carcare .item-service {
   background: #f3f3f5;
+  color: #303437;
   font-size: 18px;
-  padding: 8px;
-  margin: 8px;
+  padding: 6px;
+  margin: 6px;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.4s ease;
+  min-height: 66px;
+}
+
+.home-container .services .carcare .row .col-sm {
+  color: #303437;
+  text-decoration: none;
+  padding-right: initial !important;
+    padding-left: initial !important;
 }
 
 .home-container .services .carcare .row .col-sm a {
@@ -817,7 +828,7 @@ article {
   text-decoration: none;
 }
 
-.home-container .services .carcare .row .col-sm:hover {
+.home-container .services .carcare .item-service:hover {
   background: #cecece;
   transform: scale(1.1);
 }
