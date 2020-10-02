@@ -209,7 +209,7 @@ body {
 }
 
 .inicial .row .col-md-4 .cartao-liquido {
-  background: linear-gradient(90deg, rgba(79,172,164,0.700717787114846) 0%, rgba(139,105,21,0.8547794117647058) 50%);
+  background:  rgba(139,105,21,0.6);
   color: #fff;
   padding: 10vmin 35px;
   z-index: 0;
